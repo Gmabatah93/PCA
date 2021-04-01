@@ -11,7 +11,7 @@ component. In this case the variable is positioned close to the circumference
 of the correlation circle.
   + A low cos2 indicates that the variable is not perfectly represented by the PCs. In this case the variable is close to the center of the circle.
   + For a given Variable, the sum of the cos2 on all PCs is equal to one.
-*
+
 # Correspondence Analysis
 >  extension of the principal component analysis for analyzing a large contingency table formed by two qualitative
 variables (or categorical data)
