@@ -1,3 +1,24 @@
+# Dimensionality Reduction: SVD
+<img src="Images/SVD.PNG" width="600">
+
+- Every data point you can represent as a single number, which is the projection of a given data point on the "best" axis
+
+<img src="Images/SVD_Projection.PNG" width="600">
+
+- Defines the Axis
+- 'Sigma' gives the variance on the **v1** axis
+
+<img src="Images/SVD_Coord.PNG" width="600">
+
+- **NOTE**: Lots of variation along the 1st 2 axis
+
+<img src="Images/SVD_DimRed.PNG" width="600">
+<img src="Images/SVD_A_red.PNG" width="600">
+
+- **Dimensionality Reduction**: Set smallest singular values to zero
+
+---
+
 <img src="Images/ComponentMethods.PNG" width="600">
 
 # Principal Component Analysis
