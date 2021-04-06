@@ -16,6 +16,10 @@
 <img src="Images/SVD_A_red.PNG" width="600">
 
 - **Dimensionality Reduction**: Set smallest singular values to zero
+ + Discover hidden correlations/topics
+ + Remove redundant & noisy features
+ + Interpretation & Visualization
+ + Easier storage & processing of data
 
 ---
 
