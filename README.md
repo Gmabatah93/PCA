@@ -1,32 +1,13 @@
-# Dimensionality Reduction: SVD
-<img src="Images/SVD.PNG" width="600">
+# Dimensionality Reduction
+- Discover hidden correlations/topics
+- Remove redundant & noisy features
+- Interpretation & Visualization
+- Easier storage & processing of data
 
-- Every data point you can represent as a single number, which is the projection of a given data point on the "best" axis
-
-<img src="Images/SVD_Projection.PNG" width="600">
-
-- Defines the Axis
-- 'Sigma' gives the variance on the **v1** axis
-
-<img src="Images/SVD_Coord.PNG" width="600">
-
-- **NOTE**: Lots of variation along the 1st 2 axis
-
-<img src="Images/SVD_DimRed.PNG" width="600">
-<img src="Images/SVD_A_red.PNG" width="600">
-
-- **Dimensionality Reduction**: Set smallest singular values to zero
- + Discover hidden correlations/topics
- + Remove redundant & noisy features
- + Interpretation & Visualization
- + Easier storage & processing of data
-
----
-
-<img src="Images/ComponentMethods.PNG" width="600">
 
 # Principal Component Analysis
 > Summarize the information contained in a continuous (i.e, quantitative) multivariate data by reducing the dimensionality of the data without loosing important information.
+1. Maximies the projection of the variance onto a lower dimension (Figure out all the different eigenvalues of the covariance matrix, pick the biggest one, then figure out the eigenvector that matches the eigenvalue)
 
 **GOAL**: identify directions _"principal components"_ along which the variation in the data is maximal
 * **Eigenvalue**: the amount of variation retained in each principal component
