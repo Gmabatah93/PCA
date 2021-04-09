@@ -1,8 +1,9 @@
+library(readr)
 library(dplyr)
 library(FactoMineR)
 library(factoextra)
 
-# PRINCIPAL COMPONENT ANALYSIS ----
+# PCA: Decathon ----
 
 # DECATHOLON
 # Data
@@ -45,27 +46,22 @@ fviz_pca_ind(dec_PCA, repel = TRUE,
 fviz_contrib(mod_pca, choice = "ind", axes = 1:2, top = 20)
 
 
-# --- NFL COMBINE
-dat <- read_csv("https://assets.datacamp.com/production/repositories/2654/datasets/760dae913f682ba6b2758207280138662ddedc0d/DataCampCombine.csv",
-                col_types = cols(
-                  player = col_character(),
-                  position = col_factor(),
-                  school = col_character(),
-                  year = col_double(),
-                  height = col_double(),
-                  weight = col_double(),
-                  forty = col_double(),
-                  vertical = col_double(),
-                  bench = col_double(),
-                  broad_jump = col_double(),
-                  three_cone = col_double(),
-                  shuttle = col_double(),
-                  drafted = col_character()
-                ))
+# PCA: NFL Combine ----
 
-dat_PCA <- PCA(dat, quanli.sup = )
+# Data
+nfl <- read_csv("Data/DataCampCombine.csv")
+combine <- nfl %>% 
+  select(height:shuttle)
 
-# -- POKEMON
+# Matrix
+combine_Matrix <- scale(as.matrix(combine))
+combine_Covariance_Matrix <- t(combine_Matrix) %*% combine_Matrix / ( nrow(combine_Matrix) - 1 )
+
+# Eigenvalues
+combine_Eig <- eigen(combine_Covariance_Matrix)
+combine_Eig$values
+
+# PCA: Pokemon ----
 dat <- read_csv("https://assets.datacamp.com/production/course_6430/datasets/Pokemon.csv",
                 col_types = cols(
                   Number = col_integer(),
