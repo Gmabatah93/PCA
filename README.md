@@ -10,11 +10,14 @@
 # Principal Component Analysis
 <img src="Images/PCA_BigPicture.PNG" width="500">
 
-> Summarize the information contained in a continuous (i.e, quantitative) multivariate data by reducing the dimensionality of the data without loosing important information.
-1. Maximies the projection of the variance onto a lower dimension (Figure out all the different eigenvalues of the covariance matrix, pick the biggest one, then figure out the eigenvector that matches the eigenvalue)
+> - Linear Combination of the original variables
+> - Identify directions "Principal Components" along which the variation in the data is maximal
+> - "Find a lower dimensional line/plane on which to project the data so that the sum of square is min. OR Find the line that maximizes the distances from the projected points to the origin"
+
+**Eigenvalue**: The amount of variance retained by each Principal Component
 
 ## Algorithm
-1. s
+"Reduce from n-dimensions to k-dimensions: Find k vectors [u1,u2,...,uk] onto which to project the data so as to min the projection error"
 
 # Correspondence Analysis
 >  extension of the principal component analysis for analyzing a large contingency table formed by two qualitative
